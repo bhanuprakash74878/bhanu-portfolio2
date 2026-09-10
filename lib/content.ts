@@ -188,11 +188,10 @@ export const content: PortfolioContent = {
   },
   // Empty string = link not yet provided; the UI hides these until set.
   social: {
-    github: "",
-    linkedin: "",
-    instagram: "",
+    github: "https://github.com/bhanuprakash74878",
+    linkedin: "https://www.linkedin.com/in/bhanu-prakash-puttam-955220411?utm_source=share_via&utm_content=profile&utm_medium=member_android",
+    instagram: "https://www.instagram.com/itz_bhanu_277?stkn=Z2ZyOGRoYmQxY2Z3",
     twitter: "",
-    youtube: "",
   },
   skillCategories: [
     "Programming Languages",
@@ -316,5 +315,4 @@ export const SOCIAL_META: Record<SocialKey, { label: string }> = {
   linkedin: { label: "LinkedIn" },
   instagram: { label: "Instagram" },
   twitter: { label: "X / Twitter" },
-  youtube: { label: "YouTube" },
 }
