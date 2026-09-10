@@ -1,15 +1,10 @@
-import { GraduationCap, School } from "lucide-react"
+import { GraduationCap } from "lucide-react"
 import { content } from "@/lib/content"
 import { Section } from "@/components/section"
 import { Reveal } from "@/components/reveal"
 
 export function Education() {
   const { education } = content
-
-  const placeholders = [
-    { label: "Intermediate / 12th", hint: "To be added" },
-    { label: "10th / Secondary", hint: "To be added" },
-  ]
 
   return (
     <Section
@@ -55,24 +50,7 @@ export function Education() {
             </div>
           </Reveal>
         ))}
-
-        <div className="grid gap-4 sm:grid-cols-2">
-          {placeholders.map((p, i) => (
-            <Reveal as="article" key={p.label} delay={i * 60}>
-              <div className="flex items-center gap-4 rounded-xl border border-dashed border-border/70 bg-card/40 p-5">
-                <span className="flex size-10 items-center justify-center rounded-lg bg-secondary text-muted-foreground">
-                  <School className="size-5" aria-hidden="true" />
-                </span>
-                <div>
-                  <h3 className="text-sm font-medium">{p.label}</h3>
-                  <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-                    {p.hint}
-                  </p>
-                </div>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+      
       </div>
     </Section>
   )
