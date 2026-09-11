@@ -169,7 +169,8 @@ export const content: PortfolioContent = {
     location: "Tirupati, Andhra Pradesh, India",
     email: "bhanuprakashputtam@gmail.com",
     phone: "9398979791",
-    photoUrl: https://avatars.githubusercontent.com/u/287155570?s=400&u=2a4dcd99f6ed549f68ab03d75dec6c85c6975b12&v=4,
+    photoUrl:
+      "https://avatars.githubusercontent.com/u/287155570?s=400&u=2a4dcd99f6ed549f68ab03d75dec6c85c6975b12&v=4",
   },
   about: {
     paragraphs: [

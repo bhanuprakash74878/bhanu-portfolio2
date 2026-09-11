@@ -3,6 +3,7 @@
 import { ArrowRight, Download, Sparkles } from "lucide-react"
 import { content } from "@/lib/content"
 import { HeroVisual } from "@/components/hero-visual"
+import { HeroPortrait } from "@/components/hero-portrait"
 import { SocialLinks } from "@/components/social-links"
 import { openAskBhanu } from "@/lib/ask-bhanu"
 
@@ -16,7 +17,7 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative flex min-h-[100svh] items-center overflow-hidden pt-16"
+      className="relative min-h-[100svh] overflow-hidden pt-16 lg:flex lg:items-center"
       aria-labelledby="hero-heading"
     >
       <div className="grid-bg pointer-events-none absolute inset-0 radial-fade" aria-hidden="true" />
@@ -26,8 +27,8 @@ export function Hero() {
         aria-hidden="true"
       />
 
-      <div className="relative mx-auto w-full max-w-6xl px-5 py-20 sm:px-8">
-        <div className="max-w-3xl">
+      <div className="relative z-20 mx-auto w-full max-w-6xl px-5 py-20 sm:px-8">
+        <div className="max-w-3xl lg:max-w-xl">
           <div className="inline-flex items-center gap-2 rounded-full border border-border bg-card/60 px-3 py-1.5 font-mono text-xs text-muted-foreground backdrop-blur">
             <span className="relative flex size-2">
               <span className="absolute inline-flex size-full animate-ping rounded-full bg-brand/70" />
@@ -84,6 +85,8 @@ export function Hero() {
           </div>
         </div>
       </div>
+
+      <HeroPortrait />
     </section>
   )
 }
