@@ -94,25 +94,21 @@ export function HeroPortrait() {
         aria-hidden="true"
       />
 
-      {/* Portrait cutout */}
+      {/* Portrait cutout: object-contain guarantees the full person (hair to
+          shoulders) is always shown, never cropped, regardless of viewport */}
       <div
         ref={imgRef}
-        className="absolute bottom-0 left-[8%] right-[4%] top-[4%] transition-transform duration-300 ease-out will-change-transform lg:left-[26%] lg:right-[2%] lg:top-[6%]"
-        style={{
-          WebkitMaskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
-          WebkitMaskSize: "100% 100%",
-          maskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
-          maskSize: "100% 100%",
-        }}
+        className="absolute bottom-0 left-[6%] right-[4%] top-[6%] transition-transform duration-300 ease-out will-change-transform lg:left-[28%] lg:right-[3%] lg:top-[9%]"
       >
         <img
           src="/images/profile-portrait.png"
           alt="Portrait of Puttam Bhanu Prakash"
           width={760}
-          height={1013}
+          height={1018}
           fetchPriority="high"
           decoding="async"
-          className="absolute inset-0 h-full w-full object-cover object-top drop-shadow-[0_30px_60px_-20px_rgba(0,0,0,0.35)]"
+          className="absolute inset-0 h-full w-full object-contain drop-shadow-[0_30px_60px_-20px_rgba(0,0,0,0.35)]"
+          style={{ objectPosition: "38% 100%" }}
         />
       </div>
 
