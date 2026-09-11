@@ -192,7 +192,7 @@ export const content: PortfolioContent = {
     github: "https://github.com/bhanuprakash74878",
     linkedin: "https://www.linkedin.com/in/bhanu-prakash-puttam-955220411?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     instagram: "https://www.instagram.com/itz_bhanu_277?stkn=Z2ZyOGRoYmQxY2Z3",
-    twitter: "",
+    twitter: "https://x.com/Bhanu82840507",
   },
   skillCategories: [
     "Programming Languages",
