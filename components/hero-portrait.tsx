@@ -97,11 +97,11 @@ export function HeroPortrait() {
       {/* Portrait cutout */}
       <div
         ref={imgRef}
-        className="absolute bottom-0 left-[8%] right-[4%] top-0 transition-transform duration-300 ease-out will-change-transform lg:left-[26%] lg:right-[2%]"
+        className="absolute bottom-0 left-[8%] right-[4%] top-[4%] transition-transform duration-300 ease-out will-change-transform lg:left-[26%] lg:right-[2%] lg:top-[6%]"
         style={{
-          WebkitMaskImage: "linear-gradient(to top, black 80%, transparent 100%)",
+          WebkitMaskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
           WebkitMaskSize: "100% 100%",
-          maskImage: "linear-gradient(to top, black 80%, transparent 100%)",
+          maskImage: "linear-gradient(to bottom, black 92%, transparent 100%)",
           maskSize: "100% 100%",
         }}
       >
